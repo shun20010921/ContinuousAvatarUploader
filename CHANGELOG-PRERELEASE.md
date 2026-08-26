@@ -21,6 +21,9 @@ The format is based on [Keep a Changelog].
 
 ### Fixed
 
+- VRCFury PC→Android parameter sync when uploading via CAU: set `VRC_SdkBuilder.ActiveBuildType` and invoke `OnSdkUpload*` callbacks. [`#145`](https://github.com/anatawa12/ContinuousAvatarUploader/issues/145)
+  - Calling `OnSdkUpload*` is not a permanent change; we may remove it when the build algorithm changes.
+
 ### Security
 
 ## [0.3.12] - 2025-12-20
